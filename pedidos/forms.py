@@ -8,7 +8,7 @@ class PedidoForm(forms.ModelForm):
             'variable',
             'value',
             'unit',
-            'place',
+            'comercio',
             #'dateTime',
         ]
 
@@ -16,6 +16,6 @@ class PedidoForm(forms.ModelForm):
             'variable' : 'Variable',
             'value' : 'Value',
             'unit' : 'Unit',
-            'place' : 'Place',
+            'comercio' : 'Comercio',
             #'dateTime' : 'Date Time',
         }

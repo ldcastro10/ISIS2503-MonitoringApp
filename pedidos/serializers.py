@@ -5,5 +5,5 @@ from . import models
 class PedidoSerializer(serializers.ModelSerializer):
 
     class Meta:
-        fields = ('id', 'variable', 'value', 'unit', 'place', 'time',)
+        fields = ('id', 'variable', 'value', 'unit', 'comercio', 'time',)
         model = models.Pedido

@@ -5,7 +5,7 @@ class PedidoForm(forms.ModelForm):
     class Meta:
         model = Pedido
         fields = [
-            'variable',
+            'producto',
             'value',
             'unit',
             'comercio',
@@ -13,7 +13,7 @@ class PedidoForm(forms.ModelForm):
         ]
 
         labels = {
-            'variable' : 'Variable',
+            'producto' : 'Producto',
             'value' : 'Value',
             'unit' : 'Unit',
             'comercio' : 'Comercio',

@@ -1,8 +1,8 @@
 from django.db import models
-from variables.models import Variable
+from productos.models import Producto
 
 class Pedido(models.Model):
-    variable = models.ForeignKey(Variable, on_delete=models.CASCADE, default=None)
+    producto = models.ForeignKey(Producto, on_delete=models.CASCADE, default=None)
     value = models.FloatField(null=True, blank=True, default=None)
     unit = models.CharField(max_length=50)
     comercio = models.CharField(max_length=50)

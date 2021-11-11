@@ -32,7 +32,13 @@
 
                         {% for producto in producto_list %}
                         <tr>
-                            <td>{{ producto.name }}</td>
+                            <td class="d-flex justify-content-between">
+                                {{ producto.name }}
+                                <button type="button" class="btn btn-primary waves-effect waves-light"
+                                        onClick=" window.location.href='/producto/{{ producto.id }}' ">
+                                    Detail
+                                </button>
+                            </td>
                         </tr>
                         {% endfor %}
 

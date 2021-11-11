@@ -4,7 +4,9 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .logic.logic_pedido import create_pedido, get_pedidos
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def pedido_list(request):
     pedidos = get_pedidos()
     context = {
